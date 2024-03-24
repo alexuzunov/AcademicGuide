@@ -1,0 +1,100 @@
+.books {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.book {
+  position: relative;
+}
+
+img {
+  height: 250px;
+  max-width: 600px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.book:hover img {
+  opacity: 0.3;
+}
+
+.book:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #7892f0;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  width: 100px;
+}
+
+.text:hover {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.pfp {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.search h1 {
+  padding-left: 300px;
+}
+
+.search button {
+  height: 54px;
+  background-color: #78b8f0;
+  border: 1px solid white;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 30px;
+  width: 100px;
+}
+
+.left button {
+  margin: 15px;
+}
+
+.search .cat {
+  background-color: #78f0b2;
+}
+
+.search button:hover {
+  cursor: pointer;
+}
+
+.pfp:hover {
+  cursor: pointer;
+}
