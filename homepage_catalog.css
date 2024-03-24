@@ -1,3 +1,7 @@
+body {
+  padding: 20px;
+}
+
 .books {
   display: flex;
   flex-direction: row;
@@ -69,10 +73,6 @@ img {
   width: 80px;
 }
 
-.search h1 {
-  padding-left: 300px;
-}
-
 .search button {
   height: 54px;
   background-color: #78b8f0;
@@ -108,4 +108,23 @@ p {
   padding-left: 10px;
   color: white;
   width: 200px;
+}
+
+.right input[type="search"] {
+  height: 54px;
+  background-color: white;
+  border: 1px solid #78b8f0;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.right input[type="search"]::placeholder {
+  font-size: 16px;
+  padding-left: 15px;
 }
