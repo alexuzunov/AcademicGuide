@@ -1,0 +1,82 @@
+.profile {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .pfp {
+    width: 100%;
+  }
+
+  .name {
+    margin-top: -2px;
+    font-size: 12px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .comment-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .review {
+    display: flex;
+  }
+
+  .content {
+    margin-left: auto;
+  }
+
+  .community, .book {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rating {
+    color: grey;
+    font-size: 18px;
+  }
+  
+.details {
+    margin-left: 15px;
+}
+
+.continued {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buy {
+    all: unset;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    background-color: #78b8f0;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+    align-self: center;
+}
