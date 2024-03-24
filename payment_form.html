@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="payment_form.css">
+    <title>Payment Details</title>
 </head>
 <body>
-    
+    <div class='Payment'>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Payment Details</p>
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="form-input">
+                        <input type="text" placeholder="Cardholder Name" />
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Card Number" />
+                    </div>
+                    <div style="display: flex; justify-content: space-between;" class="form-input">
+                        <input style="width: 40%" class="month" maxlength="2" type="text" placeholder="MM" />
+                        <input style="width: 40%" class="year" maxlength="2" type="text" placeholder="YY" />
+                    </div>
+                    <div class="form-input">
+                        <input maxlength="3" type="text" placeholder="CVC" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-submit">
+                <button>
+                    Pay
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
