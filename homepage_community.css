@@ -1,8 +1,3 @@
-body {
-  background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/430294792_432557232768809_3837954999366355086_n.png?stp=dst-png_p403x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=o4XQyUUQA-wAX_KJY7z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT5ANZ_j0d3evDdXGsXOu3yrF2mV3RcDTV2pDH8waUYVQ&oe=6627A61E");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .communities {
   display: flex;
   flex-direction: row;
@@ -11,6 +6,8 @@ body {
 
 .community {
   position: relative;
+  background-color: #7892f0;
+  border-radius: 30%;
 }
 
 img {
@@ -19,13 +16,15 @@ img {
   transition: 0.5s ease;
   backface-visibility: hidden;
   display: block;
+  border-radius: 10%;
+  border: 10px solid #7892f0;
 }
 
 .middle {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -33,7 +32,7 @@ img {
 }
 
 .community:hover img {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .community:hover .middle {
@@ -107,4 +106,5 @@ img {
 .community p {
   font-family: inherit;
   text-align: center;
+  color: white;
 }

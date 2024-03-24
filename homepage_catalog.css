@@ -6,6 +6,8 @@
 
 .book {
   position: relative;
+  background-color: #7892f0;
+  border-radius: 5%;
 }
 
 img {
@@ -14,6 +16,8 @@ img {
   transition: 0.5s ease;
   backface-visibility: hidden;
   display: block;
+  border-radius: 10%;
+  border: 10px solid #7892f0;
 }
 
 .middle {
@@ -28,7 +32,7 @@ img {
 }
 
 .book:hover img {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .book:hover .middle {
@@ -97,4 +101,11 @@ img {
 
 .pfp:hover {
   cursor: pointer;
+}
+
+p {
+  text-align: center;
+  padding-left: 10px;
+  color: white;
+  width: 200px;
 }
