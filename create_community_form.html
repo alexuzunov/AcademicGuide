@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="create_community_form.css">
+    <title>Create Community</title>
 </head>
 <body>
-    
+    <div class='CreateCommunity'>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Create A Community</p>
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="form-input">
+                        <input type="text" placeholder="Title" />
+                    </div>
+                    <div class="form-input">
+                        <input type="text" placeholder="Field" />
+                    </div>
+                    <div class="form-input">
+                        <textarea placeholder="Related Books"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <textarea placeholder="Related Authors"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <textarea placeholder="Related Fields"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <input type="number" placeholder="Capacity" />
+                    </div>
+                    <div style="display: flex; margin-top: 3px" class="form-input">
+                        <input id="yes" type="radio" name="restricted" />
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="restricted" />
+                        <label for="no">No</label>
+                    </div>
+                </form>
+            </div>
+            <div class="form-submit">
+                <button>
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
