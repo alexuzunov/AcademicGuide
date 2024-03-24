@@ -21,6 +21,9 @@
                         <input type="text" placeholder="Field" />
                     </div>
                     <div class="form-input">
+                        <input type="number" placeholder="Capacity" />
+                    </div>
+                    <div class="form-input">
                         <textarea placeholder="Related Books"></textarea>
                     </div>
                     <div class="form-input">
@@ -30,19 +33,18 @@
                         <textarea placeholder="Related Fields"></textarea>
                     </div>
                     <div class="form-input">
-                        <input type="number" placeholder="Capacity" />
+                        <input id="public" type="radio" name="restriction" />
+                        <label for="public">Public</label>
                     </div>
-                    <div style="display: flex; margin-top: 3px" class="form-input">
-                        <input id="yes" type="radio" name="restricted" />
-                        <label for="yes">Yes</label>
-                        <input id="no" type="radio" name="restricted" />
-                        <label for="no">No</label>
+                    <div class="form-input">
+                        <input id="private" type="radio" name="restriction" />
+                        <label for="private">Private</label>
                     </div>
                 </form>
             </div>
             <div class="form-submit">
                 <button>
-                    Add
+                    Create
                 </button>
             </div>
         </div>
