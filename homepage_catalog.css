@@ -1,7 +1,3 @@
-body {
-  padding: 20px;
-}
-
 .books {
   display: flex;
   flex-direction: row;
@@ -22,6 +18,22 @@ img {
   display: block;
   border-radius: 10%;
   border: 10px solid #7892f0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 52px;
+}
+
+header {
+  width: 100%;
+  height: 229px;
+  background-image: url("https://t3.ftcdn.net/jpg/06/76/98/70/360_F_676987000_E2MmZqzNy39Ec9PSRW0k7IyOfGtj0IXX.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .middle {
@@ -59,18 +71,18 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 .left {
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 
 .pfp {
   border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .search button {
@@ -87,8 +99,33 @@ img {
   width: 100px;
 }
 
+nav {
+  background-color: #7892f0;
+
+  width: 100%;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .left button {
   margin: 15px;
+  height: 54px;
+  background-color: #78b8f0;
+  border: 1px solid white;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 30px;
+  width: 100px;
 }
 
 .search .cat {
@@ -127,4 +164,28 @@ p {
 .right input[type="search"]::placeholder {
   font-size: 16px;
   padding-left: 15px;
+}
+
+.right {
+  padding-top: 15px;
+}
+
+.filter {
+  position: relative;
+}
+
+.hover-hide {
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 2px solid #78b8f0;
+  border-radius: 50px;
+}
+
+.filter:hover + .hover-hide {
+  display: block;
 }

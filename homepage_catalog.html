@@ -7,24 +7,55 @@
     <link rel="stylesheet" href="homepage_catalog.css" />
   </head>
   <body>
-    <div class="search">
-      <div class="right">
-        <button class="filter">Filter</button>
-        <input type="search" placeholder="Search for key words" />
-        <button>Go</button>
-      </div>
-      <h1>Catalogue</h1>
-      <div class="left">
-        <button>Add Book</button>
-        <button class="cat">Catalogue</button>
-        <button>Communities</button>
-        <img
-          src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-          alt="profilePic"
-          class="pfp"
-        />
-      </div>
+    <div class="navigation-container">
+      <nav class="navigation">
+        <div class="search">
+          <div class="right">
+            <button class="filter">Filter</button>
+
+            <div class="hover-hide">
+              <input type="radio" />
+              <label class="container"
+                >Price : Low to High
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Price : High to Low
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Avalibality
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Most Rated
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input type="search" placeholder="Search for key words" />
+            <button>Go</button>
+          </div>
+        </div>
+        <div class="left">
+          <button>Add Book</button>
+          <button class="cat">Catalogue</button>
+          <button>Communities</button>
+          <img
+            src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+            alt="profilePic"
+            class="pfp"
+          />
+        </div>
+      </nav>
     </div>
+    <header><h1>CATALOGUE</h1></header>
+
     <div class="books">
       <div class="book">
         <img
