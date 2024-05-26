@@ -18,22 +18,66 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
-.left button {
-  margin: 15px;
+.search button {
   height: 54px;
-  background-color: #78b8f0;
-  border: 1px solid white;
+  background-color: #78f0b2;
   color: #fff;
-
+  padding: 0;
+  margin: 0;
+  border: 0;
   font-size: 15px;
   font-weight: 700;
   font-family: inherit;
-  border-radius: 30px;
   width: 100px;
 }
 
-.search .cat {
+.search button:hover, .search button:focus {
+  background-color: #54856b;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-element {
+  background-color: #fff;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.left ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.left li {
+  border-right: 1px solid #fff;
+}
+
+.left li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.left li a:hover {
+  background-color: #49578a;
+}
+
+.left .cat {
   background-color: #78f0b2;
+  color: #fff;
 }
 
 .search button:hover {
@@ -47,14 +91,13 @@ nav {
 .right input[type="search"] {
   height: 54px;
   background-color: white;
-  border: 1px solid #78b8f0;
   color: #fff;
   padding: 0;
   margin: 0;
+  border: 0;
   font-size: 15px;
   font-weight: 700;
   font-family: inherit;
-  border-radius: 30px;
   width: 300px;
 }
 
@@ -64,10 +107,23 @@ nav {
 }
 
 .right {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
   padding-top: 15px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.show {
+  display: block;
+}
+
 .filter {
+  border-left: 1px solid #fff;
   position: relative;
 }
 
@@ -174,15 +230,15 @@ img {
 
 .search button {
   height: 54px;
-  background-color: #78b8f0;
+  background-color: #78f0b2;
   border: 1px solid white;
   color: #fff;
   padding: 0;
   margin: 0;
+  border: 0;
   font-size: 15px;
   font-weight: 700;
   font-family: inherit;
-  border-radius: 30px;
   width: 100px;
 }
 

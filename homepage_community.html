@@ -7,50 +7,85 @@
     <link rel="stylesheet" href="homepage_community.css" />
   </head>
   <body>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.filter')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
     <div class="navigation-container">
       <nav class="navigation">
         <div class="search">
           <div class="right">
-            <button class="filter">Filter</button>
-
-            <div class="hover-hide">
-              <input type="radio" />
-              <label class="container"
-                >Price : Low to High
-
-                <span class="checkmark"></span>
-              </label>
-              <input type="radio" />
-              <label class="container"
-                >Price : High to Low
-
-                <span class="checkmark"></span>
-              </label>
-              <input type="radio" />
-              <label class="container"
-                >Avalibality
-
-                <span class="checkmark"></span>
-              </label>
-              <input type="radio" />
-              <label class="container"
-                >Most Rated
-                <span class="checkmark"></span>
-              </label>
-            </div>
             <input type="search" placeholder="Search for key words" />
             <button>Go</button>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="filter">Filter</button>
+              <div id="myDropdown" class="dropdown-content">
+                <div class="dropdown-element">
+                  <input type="radio" />
+                  <label class="container"
+                    >Price: Low to High
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element">
+                  <input type="radio" />
+                  <label class="container"
+                    >Price: High to Low
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element">
+                  <input type="radio" />
+                  <label class="container"
+                    >Most Rated
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element">
+                  <input type="radio" />
+                  <label class="container"
+                    >Availability
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="left">
-          <button>Add Book</button>
-          <button class="cat">Catalogue</button>
-          <button>Communities</button>
-          <img
-            src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-            alt="profilePic"
-            class="pfp"
-          />
+          <ul>
+            <li><a href="add_book_form.html">Add Book</a></li>
+            <li><a href="homepage_catalog.html">Catalogue</a></li>
+            <li><a class="cat" href="homepage_community.html">Communities</a></li>
+          </ul>
+          <a href="profile_view_with_edit.html">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="pfp"
+            />
+          </a>
         </div>
       </nav>
     </div>
@@ -62,7 +97,7 @@
           onclick=""
         />
         <div class="middle">
-          <div class="text">Join community.</div>
+          <div class="text"><a href="chat.html">Join communityg</a></div>
         </div>
 
         <p class="Title">Biology for 10th grade</p>
@@ -73,7 +108,9 @@
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
-
+        <div class="middle">
+          <div class="text"><a href="chat.html">Join community</a></div>
+        </div>
         <p class="Title">History of Egypt</p>
         <p class="Genre">History</p>
       </div>
@@ -82,6 +119,9 @@
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
+        <div class="middle">
+          <div class="text"><a href="chat.html">Join community</a></div>
+        </div>
         <p class="Title">Discussing IT for SU</p>
         <p class="Genre">IT</p>
       </div>
@@ -90,6 +130,9 @@
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
+        <div class="middle">
+          <div class="text"><a href="chat.html">Join community</a></div>
+        </div>
         <p class="Title">Human medicine</p>
         <p class="Genre">Biology</p>
       </div>
