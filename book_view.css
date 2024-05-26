@@ -9,7 +9,7 @@ body {
 .profile {
   margin-top: 40px;
   display: flex;
-  justify-content: space-evenly;
+  gap: 80px;
 }
 
 .info {
@@ -38,10 +38,32 @@ body {
 
 .review {
   display: flex;
+  background-color: #78b8f0;
+
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+  display: flex;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .content {
   margin-left: auto;
+}
+
+.contentTwo {
+  font-size: 1em;
+  color: #333;
+  border-radius: 10px; /* Rounded corners for the textarea */
+  border: 1px solid #ccc; /* Border color */
+  padding: 10px; /* Padding inside the textarea */
+  flex: 1; /* Take up the remaining space */
+  resize: vertical; /* Allow vertical resize only */
+  min-height: 30px;
+  box-sizing: border-box;
+  margin-left: 10px;
 }
 
 .community,
@@ -85,7 +107,7 @@ button {
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
-  width: 80%;
+  width: 60%;
   font-size: 18px;
   align-self: center;
 }
