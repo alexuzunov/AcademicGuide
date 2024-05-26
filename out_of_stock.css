@@ -1,0 +1,27 @@
+body {
+  background-image: url("/bg-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 130px;
+}
+
+.Not-found h1 {
+  color: #7892f0;
+  font-size: 64px;
+}
+
+.Not-found a {
+  font-size: 52px;
+
+  color: #7892f0;
+  text-decoration-color: #7892f0;
+}

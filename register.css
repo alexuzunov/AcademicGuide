@@ -1,3 +1,11 @@
+body {
+  background-image: url("/bg-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
 .Register {
   display: flex;
   justify-content: center;
