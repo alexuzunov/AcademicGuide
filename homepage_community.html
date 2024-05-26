@@ -7,24 +7,54 @@
     <link rel="stylesheet" href="homepage_community.css" />
   </head>
   <body>
-    <div class="search">
-      <div class="right">
-        <button class="filter">Filter</button>
-        <input type="search" placeholder="Search for key words" />
-        <button>Go</button>
-      </div>
-      <h1>Communities</h1>
-      <div class="left">
-        <button>Create community</button>
-        <button>Catalogue</button>
-        <button class="cat">Communities</button>
-        <img
-          src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-          alt="profilePic"
-          class="pfp"
-        />
-      </div>
+    <div class="navigation-container">
+      <nav class="navigation">
+        <div class="search">
+          <div class="right">
+            <button class="filter">Filter</button>
+
+            <div class="hover-hide">
+              <input type="radio" />
+              <label class="container"
+                >Price : Low to High
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Price : High to Low
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Avalibality
+
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" />
+              <label class="container"
+                >Most Rated
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input type="search" placeholder="Search for key words" />
+            <button>Go</button>
+          </div>
+        </div>
+        <div class="left">
+          <button>Add Book</button>
+          <button class="cat">Catalogue</button>
+          <button>Communities</button>
+          <img
+            src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+            alt="profilePic"
+            class="pfp"
+          />
+        </div>
+      </nav>
     </div>
+    <header><h1>COMMUNITIES</h1></header>
     <div class="communities">
       <div class="community">
         <img
@@ -34,56 +64,34 @@
         <div class="middle">
           <div class="text">Join community.</div>
         </div>
-        <b>
-          <div class="Title">
-            <p>Biology for 10th grade</p>
-          </div>
-          <div class="Genre">
-            <p>Biology</p>
-          </div>
-        </b>
+
+        <p class="Title">Biology for 10th grade</p>
+        <p class="Genre">Biology</p>
       </div>
       <div class="community">
         <img
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
-        <b>
-          <div class="Title">
-            <p>History of Egypt</p>
-          </div>
-          <div class="Genre">
-            <p>History</p>
-          </div>
-        </b>
+
+        <p class="Title">History of Egypt</p>
+        <p class="Genre">History</p>
       </div>
       <div class="community">
         <img
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
-        <b
-          ><div class="Title">
-            <p>Discussing IT for SU</p>
-          </div>
-          <div class="Genre">
-            <p>IT</p>
-          </div>
-        </b>
+        <p class="Title">Discussing IT for SU</p>
+        <p class="Genre">IT</p>
       </div>
       <div class="community">
         <img
           src="https://static.vecteezy.com/system/resources/previews/020/545/024/non_2x/meet-of-team-of-people-for-talk-conversation-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-therapy-vector.jpg"
           onclick=""
         />
-        <b>
-          <div class="Title">
-            <p>Human medicine</p>
-          </div>
-          <div class="Genre">
-            <p>Biology</p>
-          </div>
-        </b>
+        <p class="Title">Human medicine</p>
+        <p class="Genre">Biology</p>
       </div>
     </div>
   </body>
