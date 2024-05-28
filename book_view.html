@@ -11,12 +11,29 @@
     <title>Book</title>
   </head>
   <body>
+    <div class="navigation-container">
+      <nav class="navigation">
+        <div class="left">
+          <ul>
+            <li><a href="add_book_form.html">Add Book</a></li>
+            <li><a class="cat" href="homepage_catalog.html">Catalogue</a></li>
+            <li><a href="homepage_community.html">Communities</a></li>
+          </ul>
+          <a href="profile_view_with_edit.html">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="pfp"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
     <div class="profile">
       <div class="info">
         <img
           src="https://m.media-amazon.com/images/I/51m02prcJHL._AC_UF1000,1000_QL80_.jpg"
-          alt="profilePic"
-          class="pfp"
+          class="bookInfo"
         />
         <p class="rating">
           Rating:
@@ -25,47 +42,54 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
           <span class="fa fa-star"></span>
+          3/5
         </p>
 
-        <div class="reviews">
-          <div class="review">
-            <div class="avatar">
-              <a href="profile_view_with_chat.html">
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                  alt="profilePic"
-                  class="comment-image"
-                />
-              </a>
-              <p class="name">Pesho</p>
-            </div>
-            <p class="content">Absolutely loved it!</p>
-          </div>
-          <div class="review">
-            <div class="avatar">
-              <img
-                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                alt="profilePic"
-                class="comment-image"
-              />
-              <p class="name">Gosho</p>
-            </div>
-            <p class="content">Not a fan...</p>
-          </div>
-          <div class="review">
-            <div class="avatar">
-              <img
-                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                alt="profilePic"
-                class="comment-image"
-              />
-              <p class="name">You</p>
-            </div>
-            <textarea name="comment" class="contentTwo">
-Leave a comment here...</textarea
-            >
-          </div>
-        </div>
+        <p class="star-rating">
+          Add your rate:
+          <span class="fa fa-star" data-value="1"></span>
+          <span class="fa fa-star" data-value="2"></span>
+          <span class="fa fa-star" data-value="3"></span>
+          <span class="fa fa-star" data-value="4"></span>
+          <span class="fa fa-star" data-value="5"></span>
+        </p>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const stars = document.querySelectorAll(".star-rating .fa-star");
+            let currentRating = 0;
+
+            stars.forEach((star) => {
+              star.addEventListener("mouseover", function () {
+                resetStars();
+                const value = this.getAttribute("data-value");
+                highlightStars(value);
+              });
+
+              star.addEventListener("mouseout", function () {
+                resetStars();
+                highlightStars(currentRating);
+              });
+
+              star.addEventListener("click", function () {
+                currentRating = this.getAttribute("data-value");
+                highlightStars(currentRating);
+              });
+            });
+
+            function highlightStars(rating) {
+              for (let i = 0; i < rating; i++) {
+                stars[i].classList.add("checked");
+              }
+            }
+
+            function resetStars() {
+              stars.forEach((star) => {
+                star.classList.remove("checked");
+              });
+            }
+          });
+        </script>
       </div>
       <div class="continued">
         <p class="title">
@@ -81,9 +105,55 @@ Leave a comment here...</textarea
           <strong>Suitable For: </strong>Etiam pulvinar iaculis lorem, a congue
           velit feugiat vitae.
         </p>
+        <p class="genres"><strong>Related fields: </strong>Biology, Science</p>
         <button><a class="buy" href="out_of_stock.html">Buy Now</a></button>
-        <button><a href="homepage_community.html">Check Related Communities</a></button>
+        <button>
+          <a href="homepage_community.html">Check Related Communities</a>
+        </button>
         <button><a href="homepage_catalog.html">Check Related Books</a></button>
+      </div>
+      <div class="reviews">
+        <h2>Check the reviews:</h2>
+        <div class="review">
+          <div class="avatar">
+            <a href="profile_view_with_chat.html">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+                alt="profilePic"
+                class="comment-image"
+              />
+            </a>
+            <p class="name">Pesho</p>
+          </div>
+          <p class="content">Absolutely loved it!</p>
+        </div>
+        <div class="review">
+          <div class="avatar">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="comment-image"
+            />
+            <p class="name">Gosho</p>
+          </div>
+          <p class="content">Not a fan...</p>
+        </div>
+        <div class="review">
+          <div class="avatar">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="comment-image"
+            />
+            <p class="name">You</p>
+          </div>
+          <input
+            type="text"
+            name="comment"
+            class="contentTwo"
+            placeholder="Leave a comment here..."
+          />
+        </div>
       </div>
     </div>
   </body>

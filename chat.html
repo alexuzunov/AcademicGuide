@@ -1,84 +1,111 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chat.css" />
+    <title>Chat</title>
+  </head>
 
-<head> 
-	<meta charset="UTF-8"> 
-	<meta name="viewport" content= 
-		"width=device-width, initial-scale=1.0"> 
-	<link rel="stylesheet" href="chat.css">
-	<title>Chat</title>
-</head> 
+  <body>
+    <div class="navigation-container">
+      <nav class="navigation">
+        <div class="left">
+          <ul>
+            <li><a href="add_book_form.html">Add Book</a></li>
+            <li><a class="cat" href="homepage_catalog.html">Catalogue</a></li>
+            <li><a href="homepage_community.html">Communities</a></li>
+          </ul>
+          <a href="profile_view_with_edit.html">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="pfp"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
 
-<body>
-	<div class="navigation-container">
-        <nav class="navigation">
-            <div class="left">
-            <ul>
-                <li><a href="add_book_form.html">Add Book</a></li>
-                <li><a href="homepage_catalog.html">Catalogue</a></li>
-                <li><a href="homepage_community.html">Communities</a></li>
-            </ul>
-            <a href="profile_view_with_edit.html">
-				<img
-				  src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-				  alt="profilePic"
-				  class="pfp"
-				/>
-			</a>
+    <div class="chatInfo">
+      <div class="general">
+        <h1>Biology for 10th grade</h1>
+        <div class="di">
+          <div class="one">
+            <h3>Descriptopn:</h3>
+            <p class="generalInformation">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div>
+            <h3>Related Books:</h3>
+            <img
+              src="https://m.media-amazon.com/images/I/51m02prcJHL._AC_UF1000,1000_QL80_.jpg"
+              class="chatImage"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="chat-container">
+        <div class="message-container">
+          <div class="message sender-message">
+            <div class="user-left">
+              <a href="profile_view_with_chat.html">
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+                  alt="Sender Avatar"
+                  class="avatar"
+                />
+              </a>
+              <p class="nameP">Pesho</p>
             </div>
-        </nav>
-    </div> 
-    <h1>Biology for 10th grade</h1> 
-	<div class="chat-container">  
-		<div class="message-container"> 
-			<div class="message sender-message">
-                <div class="user-left">
-					<a href="profile_view_with_chat.html">
-                    	<img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                        alt="Sender Avatar"
-                        class="avatar">
-					</a>
-                    <p class="name">Pesho</p>
-                </div>
-				Hello there! 
-			</div> 
-			<div class="message receiver-message"> 
-                Hi! How can I help you today? 
-				<div class="user-right">
-                    <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                        alt="Sender Avatar"
-                        class="avatar">
-                    <p class="name">Gosho</p>
-                </div>
-			</div> 
-			<div class="message sender-message"> 
-				<div class="user-left">
-                    <a href="profile_view_with_chat.html">
-                    	<img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                        alt="Sender Avatar"
-                        class="avatar">
-					</a>
-                    <p class="name">Pesho</p>
-                </div>
-				I have a question about your products. 
-			</div> 
-			<div class="message receiver-message">
-				Sure, feel free to ask! 
-                <div class="user-right">
-                    <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                        alt="Sender Avatar"
-                        class="avatar">
-                    <p class="name">Gosho</p>
-                </div>
-			</div> 
-		</div> 
+            Hello there!
+          </div>
+          <div class="message receiver-message">
+            Hi! How can I help you today?
+            <div class="user-right">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+                alt="Sender Avatar"
+                class="avatar"
+              />
+              <p class="nameG">Gosho</p>
+            </div>
+          </div>
+          <div class="message sender-message">
+            <div class="user-left">
+              <a href="profile_view_with_chat.html">
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+                  alt="Sender Avatar"
+                  class="avatar"
+                />
+              </a>
+              <p class="nameP">Pesho</p>
+            </div>
+            I have a question about your products.
+          </div>
+          <div class="message receiver-message">
+            Sure, feel free to ask!
+            <div class="user-right">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+                alt="Sender Avatar"
+                class="avatar"
+              />
+              <p class="nameG">Gosho</p>
+            </div>
+          </div>
+        </div>
 
-		<div class="message"> 
-			<input type="text"
-				placeholder="Type your message..."> 
-			<button>Send</button> 
-		</div> 
-	</div> 
-</body> 
-
+        <div class="yourMessage">
+          <input type="text" placeholder="Type your message..." />
+          <button>Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

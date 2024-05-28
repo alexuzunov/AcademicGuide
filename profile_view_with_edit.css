@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-.pfp {
+.pfpTwo {
   width: 100%;
   border-radius: 50%;
 }
@@ -53,4 +53,62 @@ button {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+}
+
+.left {
+  display: flex;
+}
+
+.pfp:hover {
+  cursor: pointer;
+}
+
+.pfp {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 10px solid #7892f0;
+}
+
+nav {
+  background-color: #7892f0;
+  width: 100%;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.left ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.left li {
+  border-right: 1px solid #fff;
+}
+
+.left li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.left li a:hover {
+  background-color: #49578a;
+}
+
+.left .cat {
+  background-color: #7892f0;
+  color: #fff;
 }

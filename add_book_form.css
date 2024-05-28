@@ -32,6 +32,7 @@ body {
   padding: 13px;
   background-color: #f5f5f5;
   text-align: center;
+  color: #49578a;
 }
 
 .form-container .form-group {
@@ -62,7 +63,7 @@ body {
 }
 
 .form-container .form-group .form-input > input::placeholder {
-  color: #d6d6d6;
+  color: #8e8e8e;
 }
 
 .form-container .form-group .form-input > input:focus {
@@ -109,7 +110,8 @@ body {
   width: 100px;
 }
 
-.search button:hover, .search button:focus {
+.search button:hover,
+.search button:focus {
   background-color: #54856b;
 }
 
@@ -119,7 +121,7 @@ body {
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 

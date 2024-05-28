@@ -3,22 +3,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .profile {
-  margin-top: 40px;
-  display: flex;
+  margin-top: 30px;
+
   gap: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
   max-width: 300px;
   text-align: center;
-}
-
-.pfp {
-  width: 100%;
 }
 
 .name {
@@ -36,12 +38,18 @@ body {
   border-radius: 50%;
 }
 
+.reviews h2 {
+  color: #49578a;
+  text-align: center;
+}
+
 .review {
   display: flex;
   background-color: #78b8f0;
-
+  height: 40px;
   border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Padding inside the div */
+  padding: 20px;
+  padding-top: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
   display: flex;
   align-items: flex-start;
@@ -64,6 +72,7 @@ body {
   min-height: 30px;
   box-sizing: border-box;
   margin-left: 10px;
+  margin-top: 7px;
 }
 
 .community,
@@ -73,9 +82,9 @@ body {
   margin-bottom: 8px;
 }
 
-.image {
-  width: 100px;
-  height: 100px;
+.bookInfo {
+  max-width: 300px;
+  max-height: 550px;
 }
 
 .rating {
@@ -91,6 +100,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #cdd7fd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.2;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #49578a;
+  margin-bottom: 10px;
+}
+.genre,
+.author,
+.description,
+.suitable,
+.genres {
+  font-size: 16px;
+  color: #49578a;
+  margin-bottom: 10px;
 }
 
 .buy {
@@ -107,7 +138,87 @@ button {
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
-  width: 60%;
+  width: 55%;
   font-size: 18px;
   align-self: center;
+  margin: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.left {
+  display: flex;
+}
+
+.pfp:hover {
+  cursor: pointer;
+}
+
+.pfp {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 10px solid #7892f0;
+}
+
+nav {
+  background-color: #7892f0;
+  width: 100%;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.left ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.left li {
+  border-right: 1px solid #fff;
+}
+
+.left li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.left li a:hover {
+  background-color: #49578a;
+}
+
+.left .cat {
+  background-color: #7892f0;
+  color: #fff;
+}
+
+.star-rating {
+  font-size: 20px;
+  color: grey; /* Default star color */
+  font-size: 18px;
+}
+.star-rating .fa-star {
+  cursor: pointer;
+}
+.star-rating .fa-star.checked {
+  color: orange; /* Checked star color */
+}
+.star-rating .fa-star:hover,
+.star-rating .fa-star.hovered {
+  color: orange; /* Hovered star color */
 }

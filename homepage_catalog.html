@@ -7,62 +7,66 @@
     <link rel="stylesheet" href="homepage_catalog.css" />
   </head>
   <body>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.filter')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
     <div class="navigation-container">
       <nav class="navigation">
         <div class="search">
           <div class="right">
+            <script>
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+
+              window.onclick = function (event) {
+                if (!event.target.matches(".filter")) {
+                  var dropdowns =
+                    document.getElementsByClassName("dropdown-content");
+                  for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                      openDropdown.classList.remove("show");
+                    }
+                  }
+                }
+              };
+              function changeColor(event) {
+                var elements =
+                  document.getElementsByClassName("dropdown-element");
+                for (var i = 0; i < elements.length; i++) {
+                  var element = elements[i];
+                  if (element.classList.contains("selected")) {
+                    element.classList.remove("selected");
+                  }
+                }
+                event.target.classList.add("selected");
+              }
+            </script>
             <input type="search" placeholder="Search for key words" />
             <button>Go</button>
             <div class="dropdown">
               <button onclick="myFunction()" class="filter">Filter</button>
               <div id="myDropdown" class="dropdown-content">
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
                     >Price: Low to High
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
                     >Price: High to Low
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
                     >Most Rated
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
                     >Availability
 
@@ -138,6 +142,20 @@
         </div>
         <p class="Title">Biology <br />Concepts & connections</p>
         <p class="Genre">Biology</p>
+      </div>
+      <div class="book">
+        <img
+          src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781440500398/the-everything-new-teacher-book-9781440500398_hr.jpg"
+          onclick=""
+        />
+        <div class="middle">
+          <div class="text"><a href="book_view.html">Check book</a></div>
+        </div>
+        <p class="Title">
+          The everything <br />
+          new teacher book
+        </p>
+        <p class="Genre">Teaching</p>
       </div>
     </div>
   </body>
