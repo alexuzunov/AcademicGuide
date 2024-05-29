@@ -43,7 +43,7 @@
             <input type="search" placeholder="Search for key words" />
             <button>Go</button>
             <div class="dropdown">
-              <button onclick="myFunction()" class="filter">Filter</button>
+              <button onclick="myFunction()" class="filter">Sort By</button>
               <div id="myDropdown" class="dropdown-content">
                 <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
@@ -73,12 +73,20 @@
                     <span class="checkmark"></span>
                   </label>
                 </div>
+                <div class="dropdown-element" onclick="changeColor">
+                  <label class="container"
+                    >Date : Newer
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="left">
           <ul>
+            <li><a href="add_community_form.html">Create Community</a></li>
             <li><a href="add_book_form.html">Add Book</a></li>
             <li><a class="cat" href="homepage_catalog.html">Catalogue</a></li>
             <li><a href="homepage_community.html">Communities</a></li>
@@ -104,8 +112,10 @@
         <div class="middle">
           <div class="text"><a href="book_view.html">Check book</a></div>
         </div>
-        <p class="Title">Biology <br />Concepts & connections</p>
-        <p class="Genre">Biology</p>
+        <div class="infoBookShort">
+          <p class="Title">Biology <br />Concepts & connections</p>
+          <p class="Genre">Biology</p>
+        </div>
       </div>
       <div class="book">
         <img
@@ -115,11 +125,13 @@
         <div class="middle">
           <div class="text"><a href="book_view.html">Check book</a></div>
         </div>
-        <p class="Title">
-          World History <br />
-          Cultures, States and Societies up to 1500
-        </p>
-        <p class="Genre">History</p>
+        <div class="infoBookShort">
+          <p class="Title">
+            World History <br />
+            Cultures, States and Societies
+          </p>
+          <p class="Genre">History</p>
+        </div>
       </div>
       <div class="book">
         <img
@@ -129,8 +141,10 @@
         <div class="middle">
           <div class="text"><a href="book_view.html">Check book</a></div>
         </div>
-        <p class="Title">The C++ programming language</p>
-        <p class="Genre">IT</p>
+        <div class="infoBookShort">
+          <p class="Title">The C++ programming language</p>
+          <p class="Genre">IT</p>
+        </div>
       </div>
       <div class="book">
         <img
@@ -140,8 +154,10 @@
         <div class="middle">
           <div class="text"><a href="book_view.html">Check book</a></div>
         </div>
-        <p class="Title">Biology <br />Concepts & connections</p>
-        <p class="Genre">Biology</p>
+        <div class="infoBookShort">
+          <p class="Title">Biology <br />Concepts & connections</p>
+          <p class="Genre">Biology</p>
+        </div>
       </div>
       <div class="book">
         <img
@@ -151,11 +167,13 @@
         <div class="middle">
           <div class="text"><a href="book_view.html">Check book</a></div>
         </div>
-        <p class="Title">
-          The everything <br />
-          new teacher book
-        </p>
-        <p class="Genre">Teaching</p>
+        <div class="infoBookShort">
+          <p class="Title">
+            The everything <br />
+            new teacher book
+          </p>
+          <p class="Genre">Teaching</p>
+        </div>
       </div>
     </div>
   </body>

@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="out_of_stock.css" />
   </head>
   <body>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".filter")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <div class="navigation-container">
+      <nav class="navigation">
+        <div class="left">
+          <ul>
+            <li><a href="add_community_form.html">Create Community</a></li>
+            <li><a href="add_book_form.html">Add Book</a></li>
+            <li><a href="homepage_catalog.html">Catalogue</a></li>
+            <li>
+              <a class="cat" href="homepage_community.html">Communities</a>
+            </li>
+          </ul>
+          <a href="profile_view_with_edit.html">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="pfp"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
     <div class="Not-found">
       <h1>We're sorry but this book wasn't found in our bookstore parthners</h1>
       <a href="https://http.cat/images/404.jpg"

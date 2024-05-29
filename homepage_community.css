@@ -271,8 +271,26 @@ img {
   color: white;
 }
 
+.dropdown-element:hover,
+.dropdown-element label:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
 .Genre {
   background-color: #b1c2ff;
-  width: 30%;
-  margin-bottom: 4px;
+  padding: 5px 10px;
+  width: auto;
+  display: inline-block;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px auto 0;
+  margin-bottom: 10px;
+}
+
+.infoBookShort {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }

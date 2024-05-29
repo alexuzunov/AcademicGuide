@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="create_community_form.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="create_community_form.css" />
     <title>Create Community</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navigation-container">
-        <nav class="navigation">
-            <div class="left">
-            <ul>
-                <li><a href="add_book_form.html">Add Book</a></li>
-                <li><a href="homepage_catalog.html">Catalogue</a></li>
-                <li><a href="homepage_community.html">Communities</a></li>
-            </ul>
-            <a href="profile_view_with_edit.html">
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
-                  alt="profilePic"
-                  class="pfp"
-                />
-            </a>
-            </div>
-        </nav>
-    </div>
-    <div class='CreateCommunity'>
-        <div class="form-container">
-            <div class="form-header">
-                <p>Create A Community</p>
-            </div>
-            <div class="form-group">
-                <form>
-                    <div class="form-input">
-                        <input type="text" placeholder="Title" />
-                    </div>
-                    <div class="form-input">
-                        <input type="text" placeholder="Field" />
-                    </div>
-                    <div class="form-input">
-                        <input type="number" placeholder="Capacity" />
-                    </div>
-                    <div class="form-input">
-                        <textarea placeholder="Related Books"></textarea>
-                    </div>
-                    <div class="form-input">
-                        <textarea placeholder="Related Authors"></textarea>
-                    </div>
-                    <div class="form-input">
-                        <textarea placeholder="Related Fields"></textarea>
-                    </div>
-                    <div class="form-input">
-                        <input id="public" type="radio" name="restriction" />
-                        <label for="public">Public</label>
-                    </div>
-                    <div class="form-input">
-                        <input id="private" type="radio" name="restriction" />
-                        <label for="private">Private</label>
-                    </div>
-                </form>
-            </div>
-            <div class="form-submit">
-                <button>
-                    Create
-                </button>
-            </div>
+      <nav class="navigation">
+        <div class="left">
+          <ul>
+            <li>
+              <a class="com" href="add_community_form.html">Create Community</a>
+            </li>
+            <li><a href="add_book_form.html">Add Book</a></li>
+            <li><a href="homepage_catalog.html">Catalogue</a></li>
+            <li><a href="homepage_community.html">Communities</a></li>
+          </ul>
+          <a href="profile_view_with_edit.html">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png"
+              alt="profilePic"
+              class="pfp"
+            />
+          </a>
         </div>
+      </nav>
     </div>
-</body>
+    <div class="CreateCommunity">
+      <div class="form-container">
+        <div class="form-header">
+          <p>Create A Community</p>
+        </div>
+        <div class="form-group">
+          <form>
+            <div class="form-input">
+              <input type="text" placeholder="Title" />
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Field" />
+            </div>
+            <div class="form-input">
+              <input type="number" placeholder="Capacity" />
+            </div>
+            <div class="form-input">
+              <textarea placeholder="Related Books"></textarea>
+            </div>
+            <div class="form-input">
+              <textarea placeholder="Related Authors"></textarea>
+            </div>
+            <div class="form-input">
+              <textarea placeholder="Related Fields"></textarea>
+            </div>
+            <div class="form-input">
+              <input id="public" type="radio" name="restriction" />
+              <label for="public">Public</label>
+            </div>
+            <div class="form-input">
+              <input id="private" type="radio" name="restriction" />
+              <label for="private">Private</label>
+            </div>
+          </form>
+        </div>
+        <div class="form-submit">
+          <button>Create</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

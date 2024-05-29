@@ -42,8 +42,8 @@ body {
 }
 
 .chatImage {
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
 }
 
 .di {
@@ -370,4 +370,9 @@ h3 {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
+}
+
+.booksR {
+  display: flex;
+  gap: 6px;
 }

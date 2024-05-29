@@ -34,14 +34,23 @@
             </div>
             <div class="form-input">
               <label for="role">Role:</label>
-              <select name="role" class="form-input">
+              <select
+                id="role"
+                name="role"
+                class="form-input"
+                onchange="checkRole()"
+              >
                 <option value="regular-user">Regular User</option>
                 <option value="educator">Educator</option>
-                <option value="ed-institution">Educational Institution</option>
               </select>
             </div>
+            <div id="nameInput" style="display: none">
+              <label for="name"
+                >Enter the institution that you are working for:</label
+              >
+              <input type="text" id="name" name="name" />
+            </div>
           </form>
-
           <p>Already have an account? <a href="login.html">Login!</a></p>
         </div>
         <div class="form-submit">
@@ -49,5 +58,17 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function checkRole() {
+        var role = document.getElementById("role").value;
+        var nameInput = document.getElementById("nameInput");
+        if (role === "educator") {
+          nameInput.style.display = "block";
+        } else {
+          nameInput.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

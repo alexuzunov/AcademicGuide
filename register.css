@@ -108,3 +108,8 @@ body {
 .form-container .form-submit > button:hover {
   cursor: pointer;
 }
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}

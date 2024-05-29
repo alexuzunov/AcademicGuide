@@ -13,20 +13,20 @@
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
-      
+
       // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.filter')) {
+      window.onclick = function (event) {
+        if (!event.target.matches(".filter")) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
           var i;
           for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
             }
           }
         }
-      }
+      };
     </script>
     <div class="navigation-container">
       <nav class="navigation">
@@ -35,36 +35,32 @@
             <input type="search" placeholder="Search for key words" />
             <button>Go</button>
             <div class="dropdown">
-              <button onclick="myFunction()" class="filter">Filter</button>
+              <button onclick="myFunction()" class="filter">Sort By</button>
               <div id="myDropdown" class="dropdown-content">
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
-                    >Price: Low to High
+                    >Popularity: Low to High
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
-                    >Price: High to Low
+                    >Popularity: High to Low
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
-                    >Most Rated
+                    >Restricted : No
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element">
-                  <input type="radio" />
+                <div class="dropdown-element" onclick="changeColor">
                   <label class="container"
-                    >Availability
+                    >Restricted : Yes
 
                     <span class="checkmark"></span>
                   </label>
@@ -75,9 +71,12 @@
         </div>
         <div class="left">
           <ul>
+            <li><a href="add_community_form.html">Create Community</a></li>
             <li><a href="add_book_form.html">Add Book</a></li>
             <li><a href="homepage_catalog.html">Catalogue</a></li>
-            <li><a class="cat" href="homepage_community.html">Communities</a></li>
+            <li>
+              <a class="cat" href="homepage_community.html">Communities</a>
+            </li>
           </ul>
           <a href="profile_view_with_edit.html">
             <img
@@ -97,7 +96,9 @@
           onclick=""
         />
         <div class="middle">
-          <div class="text"><a href="chat.html">Join communityg</a></div>
+          <div class="text">
+            <a href="community_view.html">Join community</a>
+          </div>
         </div>
 
         <p class="Title">Biology for 10th grade</p>
@@ -109,7 +110,9 @@
           onclick=""
         />
         <div class="middle">
-          <div class="text"><a href="chat.html">Join community</a></div>
+          <div class="text">
+            <a href="community_view.html">Join community</a>
+          </div>
         </div>
         <p class="Title">History of Egypt</p>
         <p class="Genre">History</p>
@@ -120,7 +123,9 @@
           onclick=""
         />
         <div class="middle">
-          <div class="text"><a href="chat.html">Join community</a></div>
+          <div class="text">
+            <a href="community_view.html">Join community</a>
+          </div>
         </div>
         <p class="Title">Discussing IT for SU</p>
         <p class="Genre">IT</p>
@@ -131,10 +136,14 @@
           onclick=""
         />
         <div class="middle">
-          <div class="text"><a href="chat.html">Join community</a></div>
+          <div class="text">
+            <a href="community_view.html">Join community</a>
+          </div>
         </div>
-        <p class="Title">Human medicine</p>
-        <p class="Genre">Biology</p>
+        <div class="infoBookShort">
+          <p class="Title">Human Medicine</p>
+          <p class="Genre">Biology</p>
+        </div>
       </div>
     </div>
   </body>
