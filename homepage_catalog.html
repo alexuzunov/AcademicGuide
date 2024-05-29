@@ -28,16 +28,22 @@
                   }
                 }
               };
+
               function changeColor(event) {
-                var elements =
-                  document.getElementsByClassName("dropdown-element");
+                var elements = document.getElementsByClassName("dropdown-element");
+                
                 for (var i = 0; i < elements.length; i++) {
                   var element = elements[i];
                   if (element.classList.contains("selected")) {
                     element.classList.remove("selected");
                   }
                 }
-                event.target.classList.add("selected");
+
+                if (event.target.classList.contains("dropdown-element")) {
+                  event.target.classList.add("selected")
+                } else {
+                  event.target.parentNode.classList.add("selected");
+                }
               }
             </script>
             <input type="search" placeholder="Search for key words" />
@@ -45,35 +51,35 @@
             <div class="dropdown">
               <button onclick="myFunction()" class="filter">Sort By</button>
               <div id="myDropdown" class="dropdown-content">
-                <div class="dropdown-element" onclick="changeColor">
+                <div class="dropdown-element" onclick="changeColor(event)">
                   <label class="container"
                     >Price: Low to High
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element" onclick="changeColor">
+                <div class="dropdown-element" onclick="changeColor(event)">
                   <label class="container"
                     >Price: High to Low
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element" onclick="changeColor">
+                <div class="dropdown-element" onclick="changeColor(event)">
                   <label class="container"
                     >Most Rated
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element" onclick="changeColor">
+                <div class="dropdown-element" onclick="changeColor(event)">
                   <label class="container"
                     >Availability
 
                     <span class="checkmark"></span>
                   </label>
                 </div>
-                <div class="dropdown-element" onclick="changeColor">
+                <div class="dropdown-element" onclick="changeColor(event)">
                   <label class="container"
                     >Date : Newer
 

@@ -210,10 +210,9 @@ nav {
   cursor: pointer;
 }
 
-p {
+.genre {
   text-align: center;
-  color: white;
-  width: 200px;
+  color: rgb(104, 104, 104);
 }
 
 .nameP {
@@ -320,6 +319,15 @@ nav {
   border-right: 1px solid #fff;
 }
 
+.x-text {
+  margin-left: 8px;
+}
+
+.leave {
+  color: inherit;
+  align-self: center;
+}
+
 .left li a {
   display: block;
   color: #fff;
@@ -335,6 +343,12 @@ nav {
 .left .cat {
   background-color: #7892f0;
   color: #fff;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .chatInfo {
