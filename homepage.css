@@ -1,0 +1,117 @@
+body {
+  background-image: url("/bg-design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.big-logo img {
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  background-color: #78b8f0;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  width: 55%;
+  font-size: 18px;
+  align-self: center;
+  margin: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background-color: #7892f0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  padding-left: 5px;
+  height: 80px;
+  width: 80px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #7892f0;
+}
+
+.pfp {
+  padding: 10px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.pfp:hover {
+  cursor: pointer;
+}
+
+.left li {
+  border-right: 1px solid #fff;
+}
+
+.left li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.left li a:hover {
+  background-color: #49578a;
+}
+
+.search button:hover {
+  cursor: pointer;
+}
+
+.pfp:hover {
+  cursor: pointer;
+}

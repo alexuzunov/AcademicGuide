@@ -2,8 +2,6 @@ body {
   background-image: url("/bg-design.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 
 .Register {
@@ -34,6 +32,42 @@ body {
 
 .Register-link {
   color: #61dafb;
+}
+
+nav {
+  background-color: #7892f0;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.left li {
+  border-right: 1px solid #fff;
+}
+
+.left li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+}
+
+.left li a:hover {
+  background-color: #49578a;
+}
+
+.left .cat {
+  background-color: #78f0b2;
+  color: #fff;
 }
 
 .form-container {
