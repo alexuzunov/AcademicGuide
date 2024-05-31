@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("background.png");
+  background-image: url("./background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -104,7 +104,8 @@ input[type="number"] {
   width: 100px;
 }
 
-.search button:hover, .search button:focus {
+.search button:hover,
+.search button:focus {
   background-color: #54856b;
 }
 
@@ -114,7 +115,7 @@ input[type="number"] {
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 

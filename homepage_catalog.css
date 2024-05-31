@@ -1,7 +1,7 @@
 @import url(css-reset.css);
 
 body {
-  background-image: url("/bg-design.png");
+  background-image: url("./bg-design.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

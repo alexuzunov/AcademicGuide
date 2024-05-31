@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url("/bg-design.png");
+  background-image: url("./bg-design.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
