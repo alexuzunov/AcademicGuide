@@ -7,12 +7,76 @@
     <link rel="stylesheet" href="unregistered_homepage_community.css" />
   </head>
   <body>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".filter")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
     <div class="navigation-container">
       <nav class="navigation">
+        <div class="search">
+          <div class="right">
+            <input type="search" placeholder="Search for key words" />
+            <button>Go</button>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="filter">Sort By</button>
+              <div id="myDropdown" class="dropdown-content">
+                <div class="dropdown-element" onclick="changeColor">
+                  <label class="container"
+                    >Popularity: Low to High
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element" onclick="changeColor">
+                  <label class="container"
+                    >Popularity: High to Low
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element" onclick="changeColor">
+                  <label class="container"
+                    >Restricted : No
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="dropdown-element" onclick="changeColor">
+                  <label class="container"
+                    >Restricted : Yes
+
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="left">
           <ul>
             <li><a href="unregistered_homepage_catalog.html">Catalogue</a></li>
-            <li><a class="cat" href="unregistered_homepage_community.html">Communities</a></li>
+            <li>
+              <a class="cat" href="unregistered_homepage_community.html"
+                >Communities</a
+              >
+            </li>
             <li><a href="login.html">Login</a></li>
           </ul>
         </div>
